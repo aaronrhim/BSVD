@@ -41,7 +41,7 @@ def main():
     num_gpus = int(os.environ["WORLD_SIZE"]) if "WORLD_SIZE" in os.environ else 1
     is_distributed = num_gpus > 1
     if is_distributed:
-        torch.cuda.set_device(args.local_rank)  # 这里设定每一个进程使用的GPU是一定的
+        torch.cuda.set_device(args.local_rank)
         torch.distributed.init_process_group(
             backend="nccl", init_method="env://"
         )

@@ -83,5 +83,12 @@ Check the result at 'logs/1113_wnet_memconv_none_as_end'
 # train tswnet_24
 ./configs/train_crvd_tswnet/0907_train_crvd_ptswnet_l1_lr_same_inference_time_1e-5.sh
 ``` -->
+# Updates (SealKFC)
+Removed: 
+  - readline
+  - ncurses
+  - libstdcxx-ng
+  - libgcc-ng
+  - libedit
 
-
+from environment.yaml dependencies
